@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lp_bg"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:id="@+id/toolbarofmain"
+        android:background="#ca2d80">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/backbuttonofmainactivity"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/white"
+                android:layout_centerVertical="true">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Love Predictor"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/backbuttonofmainactivity"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbarofmain"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="200dp"
+    >
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:fontFamily="@font/dancingscript"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="FLAMES"
+        android:id="@+id/flamesbutton"
+        android:textColor="@color/white"
+        android:background="@drawable/backgroung"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="LOVE PERCENTAGE"
+        android:fontFamily="@font/dancingscript"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/flamesbutton"
+        android:background="@drawable/backgroung"
+        android:id="@+id/lovepercentage"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iglayout"
+        android:layout_above="@+id/text"
+        android:layout_marginBottom="-28dp"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="28dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cardviewofig"
+            android:layout_centerVertical="true"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/igimg"
+                android:src="@drawable/insta"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dk_2601"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_toRightOf="@+id/cardviewofig"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/caveat"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/igid">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/caveat"
+        android:id="@+id/text"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Check whether your heart and your beloved ones beat at the same rate💕"
+        android:textColor="#E4D7DC"
+        android:textSize="20dp">
+
+    </TextView>
+
+
+
+
+</RelativeLayout>

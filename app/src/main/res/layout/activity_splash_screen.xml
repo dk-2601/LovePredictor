@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lp_bg"
+    tools:context=".SplashScreen">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/cardviewofsplash"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/abcd"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Love Predictor💕"
+        android:id="@+id/textsplash"
+        android:layout_below="@+id/cardviewofsplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:fontFamily="@font/dancingscript"
+        android:textColor="@color/white">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="developed with love by"
+        android:id="@+id/developedby"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/dk"
+        android:textColor="#E6D9D9"
+        android:fontFamily="@font/caveat"
+        android:layout_marginBottom="5dp"
+        android:textSize="16dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DeepaK"
+        android:id="@+id/dk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/caveat"
+        android:textColor="@color/white">
+
+    </TextView>
+</RelativeLayout>
